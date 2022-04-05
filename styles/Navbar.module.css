@@ -1,0 +1,17 @@
+.nav {
+    height: 9vh;
+    background-color: #10a039;
+    color:#ffffff;
+}
+
+.nav_list {
+    margin: 0;
+    height: inherit;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.list_item {
+    margin: 0 10px;
+}
