@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import React, {useState} from 'react';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
@@ -19,7 +19,7 @@ export default function Home() {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:8000/contact", {
+    let response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
