@@ -1,12 +1,12 @@
 .nav {
-    height: 9vh;
+    height: 8%;
     background-color: black;
     color:#ffffff;
 }
 
 .nav_list {
     margin: 0;
-    height: inherit;
+    height: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -14,4 +14,5 @@
 
 .list_item {
     margin: 0 10px;
+    cursor: pointer;
 }

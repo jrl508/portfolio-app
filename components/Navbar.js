@@ -10,17 +10,17 @@ export const Navbar = () => {
                 <li className={styles.list_item}>
                     <Link href='/'>Home</Link>
                 </li>
-                <li className={styles.list_item}>
+                {/* <li className={styles.list_item}>
                     <Link href='/blog'>Blog</Link>
-                </li>
+                </li> */}
                 <li className={styles.list_item}>
                     <Link href='/projects'>Projects</Link>
                 </li>
-                <li className={styles.list_item}>
-                    <Link href='/about'>About</Link>
+                <li onClick={()=> document.querySelector('#about-section').scrollIntoView({behavior:'smooth'})} className={styles.list_item}>
+                    About
                 </li>
-                <li className={styles.list_item}>
-                    <Link href='/contact'>Contact</Link>
+                <li onClick={()=> document.querySelector('#contact-section').scrollIntoView({behavior:'smooth'})} className={styles.list_item}>
+                    Contact
                 </li>
             </ul> 
        </div>
