@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import Screens from '../public/Screens.png';
 import Authentication from '../public/Authentication.png';
 import API from '../public/API2.png';
+import { Projects } from '../components/Projects';
 
 export default function Home() {
 
@@ -95,6 +96,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div id='projects-section' className={`${styles.section} ${styles.projects_container}`}>
+        <div className={styles.section_title}>
+          <h1>
+            Projects
+          </h1>
+        </div>
+        <Projects />
+
       </div>
 
       <div id='contact-section' className={`${styles.section} ${styles.contact_container}`}>

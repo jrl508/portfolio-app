@@ -121,6 +121,64 @@
   padding-left: 10px;
 }
 
+.projects_container {
+  background-color: black;
+  color: white;
+}
+
+.project_card {
+  width: 325px;
+  height: 600px;
+}
+
+.card_image {
+  background-color: white;
+  padding: 15px;
+}
+
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 25px 10px;
+}
+
+.proj_one {
+  grid-area: 1 / 2 / 2 / 4;
+  justify-self: center;
+}
+
+.proj_three {
+  grid-area: 1 / 4 / 2 / 6;
+  justify-self: center;
+}
+
+
+.proj_two {
+  grid-area: 2 / 3 / 3 / 5;
+  justify-self: center;
+}
+
+.proj_title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: solid 2px white;
+}
+
+.proj_title span {
+  margin-left: 15px;
+}
+
+.proj_stack {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 @media (max-width: 800px) {
   .cta_hero {
     height: 50%;
