@@ -38,12 +38,12 @@ export default function Home() {
         <div className={styles.cta_hero_text}>
           <p className={styles.hero_name}>{"Hello I'm Ricardo Lafontant"}</p>
           <p className={styles.hero_titles}>Full Stack Developer - Freelancer</p>
-          <p style={{
+          <p className={styles.hero_desc}
+          style={{
             lineHeight:'1.5',
           }}>
-            Web dev from the City of Champions! With professional experience building modern web applications, I am here to help bring new ideas to life.
-            Whether {"it's"} a site for your business, building a blog, or the next big app idea, I am always willing to take on the challenge.
-            If you have questions about a project of yours or are a fellow dev looking to collaborate, feel free to reach out!
+            Always looking for a challenge, I am here to help bring new ideas to life.
+            Whether {"it's"} a site for your business, the next big app idea, or you are a fellow dev looking to collaborate, feel free to reach out!
           </p>
           <button onClick={()=> document.querySelector('#contact-section').scrollIntoView({behavior:'smooth'})} className={`${styles.styled_button} ${styles.cta_button}`}>{"Let's Build Something"}</button>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
 
           <div className={styles.skills_block}>
-            <div>
+            <div className={styles.skills_image_card}>
               <Image src={Authentication} width={300} height={250} alt='authentication'/>
             </div>
             <div>
