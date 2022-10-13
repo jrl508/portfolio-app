@@ -1,21 +1,17 @@
 .cta_hero {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../public/GM-fuego.png");
-
-    /* Set a specific height */
     height: 92%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hero_img {
+  z-index: 0;
+}
+
 .cta_hero_text {
+  z-index: 1;
   padding-left: 15%;
   width:50%;
   color: white;
@@ -184,7 +180,6 @@
 @media (max-width: 800px) {
   .cta_hero {
     height: 70%;
-    background-position:top left;
   }
 
   .cta_hero_text {

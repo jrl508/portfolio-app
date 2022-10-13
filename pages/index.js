@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Screens from '../public/Screens.png';
+import GMfuego from '../public/GM-fuego.png';
 import Authentication from '../public/Authentication.png';
 import API from '../public/API2.png';
 import { Projects } from '../components/Projects';
@@ -35,6 +36,14 @@ export default function Home() {
   return (
     <>
       <div className={styles.cta_hero}>
+        <Image 
+          src={GMfuego}
+          alt='hero banner'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          className={styles.hero_img}
+        />
         <div className={styles.cta_hero_text}>
           <p className={styles.hero_name}>{"Hello I'm Ricardo Lafontant"}</p>
           <p className={styles.hero_titles}>Full Stack Developer - Freelancer</p>
