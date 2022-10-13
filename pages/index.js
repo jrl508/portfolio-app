@@ -43,6 +43,7 @@ export default function Home() {
           objectFit='cover'
           objectPosition='center'
           className={styles.hero_img}
+          priority
         />
         <div className={styles.cta_hero_text}>
           <p className={styles.hero_name}>{"Hello I'm Ricardo Lafontant"}</p>
