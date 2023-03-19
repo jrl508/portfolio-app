@@ -1,12 +1,24 @@
-import Head from "next/head";
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Screens from "../public/Screens.png";
-import GMfuego from "../public/GM-fuego.png";
 import bg from "../public/bg.svg";
-import Authentication from "../public/Authentication.png";
-import API from "../public/API2.png";
+import reactlogo from "../public/reactlogo.svg";
+import nextlogo from "../public/nextlogo.svg";
+import csslogo from "../public/csslogo.svg";
+import googlAnalytics from "../public/google-analytics-logo.svg";
+import htmllogo from "../public/html5logo.svg";
+import reduxlogo from "../public/reduxlogo.svg";
+import mobxlogo from "../public/mobxlogo.svg";
+import mongologo from "../public/mongodb-logo.svg";
+import auth0logo from "../public/auth0-logo.svg";
+import materiallogo from "../public/material-ui-logo.svg";
+import javascriptlogo from "../public/javascript-logo.svg";
+import pythonlogo from "../public/python-logo.svg";
+import nodelogo from "../public/nodejs-logo.svg";
+import postgresqllogo from "../public/postqresql-logo.svg";
+import awslogo from "../public/aws-logo.svg";
+import mysqllogo from "../public/mysql-logo.svg";
+import Avatar from "../public/Avatar.png";
 import { Projects } from "../components/Projects";
 import Typed from "react-typed";
 
@@ -46,6 +58,7 @@ export default function Home() {
           className={styles.hero_img}
           priority
         />
+        <Image src={Avatar} width={300} height={300} />
         <div className={styles.cta_hero_text}>
           <div className={styles.hero_name}>
             <Typed
@@ -95,56 +108,43 @@ export default function Home() {
         </div>
 
         <div className={styles.section_body}>
-          <div className={styles.skills_block}>
-            <div className={styles.skills_image_card}>
-              <Image
-                src={Screens}
-                width={250}
-                height={250}
-                alt="responsive screens"
-              />
-            </div>
-            <div>
-              <h2>Responsive Web Design</h2>
-              <p>
-                Build applications for all screen sizes.
-                <br />
-                Maintain a quality user interface no matter what device they are
-                on.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.skills_block}>
-            <div className={styles.skills_image_card}>
-              <Image
-                src={Authentication}
-                width={300}
-                height={250}
-                alt="authentication"
-              />
-            </div>
-            <div>
-              <h2>User Authentication</h2>
-              <p>
-                Implement standard practices for user accounts with secure
-                password logins or integrating social account info.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.skills_block}>
-            <div className={styles.skills_image_card}>
-              <Image src={API} width={300} height={250} alt="authentication" />
-            </div>
-            <div>
-              <h2>API Development</h2>
-              <p>
-                {
-                  "Build and manage RESTful API's for your applications, or communicate with external API's to supplement the user experience of your app."
-                }
-              </p>
-            </div>
+          <div className={styles.tech_grid}>
+            <Image
+              src={javascriptlogo}
+              width={80}
+              height={80}
+              alt="Javascript Logo"
+            />
+            <Image src={pythonlogo} width={80} height={80} alt="Python Logo" />
+            <Image src={htmllogo} width={80} height={80} alt="HTML Logo" />
+            <Image src={csslogo} width={80} height={80} alt="CSS Logo" />
+            <Image src={reactlogo} width={80} height={80} alt="React Logo" />
+            <Image src={nextlogo} width={80} height={80} alt="Next Logo" />
+            <Image src={reduxlogo} width={80} height={80} alt="Redux Logo" />
+            <Image src={mobxlogo} width={80} height={80} alt="Mobx Logo" />
+            <Image src={nodelogo} width={80} height={80} alt="Node Logo" />
+            <Image
+              src={materiallogo}
+              width={80}
+              height={80}
+              alt="Material Logo"
+            />
+            <Image
+              src={postgresqllogo}
+              width={80}
+              height={80}
+              alt="Postgresql Logo"
+            />
+            <Image src={mysqllogo} width={80} height={80} alt="MySQL Logo" />
+            <Image src={mongologo} width={80} height={80} alt="MongoDB Logo" />
+            <Image src={auth0logo} width={80} height={80} alt="Auth0 Logo" />
+            <Image
+              src={googlAnalytics}
+              width={80}
+              height={80}
+              alt="Google Analytics Logo"
+            />
+            <Image src={awslogo} width={80} height={80} alt="AWS Logo" />
           </div>
         </div>
       </div>
