@@ -18,6 +18,9 @@ import nodelogo from "../public/nodejs-logo.svg";
 import postgresqllogo from "../public/postqresql-logo.svg";
 import awslogo from "../public/aws-logo.svg";
 import mysqllogo from "../public/mysql-logo.svg";
+import lockImage from "../public/secure-svgrepo-com.svg";
+import screensImage from "../public/screens-modern-variety-svgrepo-com.svg";
+import cloudDataImage from "../public/cloud-computing-data-svgrepo-com.svg";
 import Avatar from "../public/Avatar.png";
 import { Projects } from "../components/Projects";
 import Typed from "react-typed";
@@ -49,6 +52,7 @@ export default function Home() {
   return (
     <>
       <div className={styles.cta_hero}>
+        <div className={styles.linearGrad}></div>
         <Image
           src={bg}
           alt="hero banner"
@@ -101,13 +105,52 @@ export default function Home() {
       <div id="about-section" className={styles.section}>
         <div className={styles.section_title}>
           <h1>End to End Development</h1>
-          <p>
-            From building or updating a modern front end design all the way to
-            database management on the back end.
-          </p>
+        </div>
+
+        <div className={styles.serviceCards}>
+          <div className={styles.card}>
+            <Image
+              src={screensImage}
+              width={150}
+              height={150}
+              alt="Screens Image"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
+              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
+              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <Image
+              src={cloudDataImage}
+              width={150}
+              height={150}
+              alt="Screens Image"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
+              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
+              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+            </p>
+          </div>
+          <div className={styles.card}>
+            <Image
+              src={lockImage}
+              width={150}
+              height={150}
+              alt="Screens Image"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
+              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
+              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+            </p>
+          </div>
         </div>
 
         <div className={styles.section_body}>
+          <h2>Techonologies Used</h2>
           <div className={styles.tech_grid}>
             <Image
               src={javascriptlogo}
