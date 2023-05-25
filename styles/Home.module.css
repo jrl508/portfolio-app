@@ -129,6 +129,7 @@
   background-color: black;
   color: white;
   padding: 0 8rem;
+  height: 100vh;
 }
 
 .project_card {
@@ -199,6 +200,29 @@
 .card {
   width: 25%;
   text-align: center;
+}
+
+.ssCard {
+  height: 200px;
+  width: 320px;
+  position: relative;
+}
+
+.ssCard:nth-of-type(1) {
+  bottom: 5%;
+  left: 15%;
+}
+
+.ssCard:nth-of-type(2) {
+  background-color: yellow;
+  bottom: 15%;
+  right: 35%;
+}
+
+.ssCard:nth-of-type(3) {
+  background-color: red;
+  bottom: 55%;
+  left: 35%;
 }
 
 @media (max-width: 800px) {

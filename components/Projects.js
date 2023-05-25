@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 import DMLogo from "../public/DMLogo.png";
 import BTKDLogo from "../public/BTKDlogo.jpg";
 import DMSS from "../public/DMSS.png";
+import DMSS2 from "../public/DMSS2.png";
+import BTKDSS from "../public/BTKDSS.png";
+import ReactLogo from "../public/reactlogo.svg";
 
 export const Projects = () => {
   return (
@@ -53,7 +56,23 @@ export const Projects = () => {
         </ul>
         <h2>In Development</h2>
         <ul>
-          <li>DIY App</li>
+          <li className={styles.listItem}>
+            <div className={styles.proj_title}>
+              <Image width={70} height={70} src={ReactLogo} alt="React logo" />
+              <span>
+                <a
+                  href="https://github.com/jrl508/DIM"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  DIY App
+                </a>
+                <div className={styles.proj_stack}>
+                  React Native | MongoDB | NodeJs
+                </div>
+              </span>
+            </div>
+          </li>
         </ul>
         {/* <ul className={styles.project_grid}>
                 <li className={styles.proj_one}>
@@ -110,38 +129,19 @@ export const Projects = () => {
         className="image-box"
         style={{
           backgroundColor: "lightblue",
+          maxHeight: "50vh",
+          borderRadius: "20px",
         }}
       >
-        <div
-          style={{
-            height: "200px",
-            width: "320px",
-            backgroundColor: "green",
-            position: "relative",
-            bottom: "5%",
-            left: "15%",
-          }}
-        ></div>
-        <div
-          style={{
-            height: "200px",
-            width: "320px",
-            backgroundColor: "yellow",
-            position: "relative",
-            bottom: "15%",
-            right: "10%",
-          }}
-        ></div>{" "}
-        <div
-          style={{
-            height: "200px",
-            width: "320px",
-            backgroundColor: "red",
-            position: "relative",
-            bottom: "35%",
-            left: "20%",
-          }}
-        ></div>
+        <div className={styles.ssCard}>
+          <Image height={250} width={400} src={BTKDSS} />
+        </div>{" "}
+        <div className={styles.ssCard}>
+          <Image height={250} width={400} src={DMSS} />
+        </div>
+        <div className={styles.ssCard}>
+          <Image height={250} width={400} src={DMSS2} />
+        </div>
       </div>
     </div>
   );
