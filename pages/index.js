@@ -24,6 +24,7 @@ import cloudDataImage from "../public/cloud-computing-data-svgrepo-com.svg";
 import Avatar from "../public/Avatar.png";
 import { Projects } from "../components/Projects";
 import Typed from "react-typed";
+import Tooltip from "../components/Tooltip";
 
 export default function Home() {
   const [status, setStatus] = useState("Submit");
@@ -115,10 +116,11 @@ export default function Home() {
               height={150}
               alt="Screens Image"
             />
+            <h3>Modern Development</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
-              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
-              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+              Create awesome applications using the latest technologies. Build a
+              SPA or PWA from the ground up or with a user friendly CMS. Or
+              launch your next idea in the app store!
             </p>
           </div>
           <div className={styles.card}>
@@ -128,10 +130,10 @@ export default function Home() {
               height={150}
               alt="Screens Image"
             />
+            <h3>Database Development and Configuration</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
-              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
-              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+              Build and manage the logic side of your application through a
+              personal server or get set up with cloud computing.
             </p>
           </div>
           <div className={styles.card}>
@@ -141,10 +143,11 @@ export default function Home() {
               height={150}
               alt="Screens Image"
             />
+            <h3>Follow Best Practices</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis
-              odio bibendum ultrices condimentum. Fusce ac elit eu lectus tempus
-              euismod nec non urna. Suspendisse placerat et ex quis eleifend.
+              Always making sure to tick off all the neccesary boxes, whether
+              that is staying up to date on security standards or maintaining
+              accessibility for your users.
             </p>
           </div>
         </div>
@@ -152,42 +155,84 @@ export default function Home() {
         <div className={styles.section_body}>
           <h2>Techonologies Used</h2>
           <div className={styles.tech_grid}>
-            <Image
-              src={javascriptlogo}
-              width={80}
-              height={80}
-              alt="Javascript Logo"
-            />
-            <Image src={pythonlogo} width={80} height={80} alt="Python Logo" />
-            <Image src={htmllogo} width={80} height={80} alt="HTML Logo" />
-            <Image src={csslogo} width={80} height={80} alt="CSS Logo" />
-            <Image src={reactlogo} width={80} height={80} alt="React Logo" />
-            <Image src={nextlogo} width={80} height={80} alt="Next Logo" />
-            <Image src={reduxlogo} width={80} height={80} alt="Redux Logo" />
-            <Image src={mobxlogo} width={80} height={80} alt="Mobx Logo" />
-            <Image src={nodelogo} width={80} height={80} alt="Node Logo" />
-            <Image
-              src={materiallogo}
-              width={80}
-              height={80}
-              alt="Material Logo"
-            />
-            <Image
-              src={postgresqllogo}
-              width={80}
-              height={80}
-              alt="Postgresql Logo"
-            />
-            <Image src={mysqllogo} width={80} height={80} alt="MySQL Logo" />
-            <Image src={mongologo} width={80} height={80} alt="MongoDB Logo" />
-            <Image src={auth0logo} width={80} height={80} alt="Auth0 Logo" />
-            <Image
-              src={googlAnalytics}
-              width={80}
-              height={80}
-              alt="Google Analytics Logo"
-            />
-            <Image src={awslogo} width={80} height={80} alt="AWS Logo" />
+            <Tooltip text="Javascript">
+              <Image
+                src={javascriptlogo}
+                width={80}
+                height={80}
+                alt="Javascript Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"Python"}>
+              <Image
+                src={pythonlogo}
+                width={80}
+                height={80}
+                alt="Python Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"HTML"}>
+              <Image src={htmllogo} width={80} height={80} alt="HTML Logo" />
+            </Tooltip>
+            <Tooltip text={"CSS"}>
+              <Image src={csslogo} width={80} height={80} alt="CSS Logo" />
+            </Tooltip>
+            <Tooltip text={"ReactJS"}>
+              <Image src={reactlogo} width={80} height={80} alt="React Logo" />
+            </Tooltip>
+            <Tooltip text={"NextJS"}>
+              <Image src={nextlogo} width={80} height={80} alt="Next Logo" />
+            </Tooltip>
+            <Tooltip text={"Redux"}>
+              <Image src={reduxlogo} width={80} height={80} alt="Redux Logo" />
+            </Tooltip>
+            <Tooltip text={"Mobx"}>
+              <Image src={mobxlogo} width={80} height={80} alt="Mobx Logo" />
+            </Tooltip>
+            <Tooltip text={"Node"}>
+              <Image src={nodelogo} width={80} height={80} alt="Node Logo" />
+            </Tooltip>
+            <Tooltip text={"Material UI"}>
+              <Image
+                src={materiallogo}
+                width={80}
+                height={80}
+                alt="Material Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"Postgresql"}>
+              <Image
+                src={postgresqllogo}
+                width={80}
+                height={80}
+                alt="Postgresql Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"MySQL"}>
+              <Image src={mysqllogo} width={80} height={80} alt="MySQL Logo" />
+            </Tooltip>
+            <Tooltip text={"MongoDB"}>
+              <Image
+                src={mongologo}
+                width={80}
+                height={80}
+                alt="MongoDB Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"Auth0"}>
+              <Image src={auth0logo} width={80} height={80} alt="Auth0 Logo" />
+            </Tooltip>
+            <Tooltip text={"Google Analytics"}>
+              <Image
+                src={googlAnalytics}
+                width={80}
+                height={80}
+                alt="Google Analytics Logo"
+              />
+            </Tooltip>
+            <Tooltip text={"Amazon Web Services"}>
+              <Image src={awslogo} width={80} height={80} alt="AWS Logo" />
+            </Tooltip>
           </div>
         </div>
       </div>
