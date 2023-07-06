@@ -42,6 +42,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 .hero_name {
+  font-family: "Courier New", Courier, monospace;
   font-size: 3.8rem;
   font-weight: 500;
   margin: 0;
@@ -129,7 +130,6 @@
   background-color: black;
   color: white;
   padding: 0 8rem;
-  height: 100vh;
 }
 
 .project_card {
@@ -165,22 +165,34 @@
   justify-self: center;
 }
 
-.proj_title {
+.project {
   font-weight: 700;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+  width: 40%;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.proj_title span {
+.project span {
   margin-left: 15px;
 }
 
 .proj_stack {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+
+.proj_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.proj_title a {
+  margin-left: 20px;
 }
 
 .tech_grid {
@@ -223,6 +235,17 @@
   background-color: red;
   bottom: 55%;
   left: 35%;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 55px 0;
+}
+
+.proj_image > span {
+  box-shadow: -25px 30px 2px 0px darkgrey;
 }
 
 @media (max-width: 800px) {
