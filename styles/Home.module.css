@@ -1,19 +1,26 @@
 .cta_hero {
-    height: 92%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero_img {
   z-index: 0;
 }
 
+.linearGrad {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), 85%, rgb(255, 255, 255));
+}
+
 .cta_hero_text {
   z-index: 1;
-  padding-left: 15%;
-  width:50%;
+  width: 70%;
   color: white;
 }
 
@@ -23,7 +30,7 @@
   border: solid white 1px;
   cursor: pointer;
   height: 50px;
-  transition: all .5s;
+  transition: all 0.5s;
   font-size: 15px;
 }
 
@@ -35,6 +42,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 .hero_name {
+  font-family: "Courier New", Courier, monospace;
   font-size: 3.8rem;
   font-weight: 500;
   margin: 0;
@@ -46,7 +54,7 @@
 }
 
 .skills_image_card {
-  background: radial-gradient(#EC6782 0%, #a04bd9 75%);
+  background: radial-gradient(#ec6782 0%, #a04bd9 75%);
   width: 100%;
   height: 250px;
   text-align: center;
@@ -67,13 +75,13 @@
 .section {
   display: flex;
   flex-flow: column nowrap;
-  padding: 30px 0;
+  row-gap: 30px;
+  padding: 50px 20px;
 }
 
 .section_title {
   text-align: center;
 }
-
 
 .section_title p {
   width: 50%;
@@ -83,10 +91,9 @@
 }
 
 .section_body {
-  margin-top: 3rem;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .contact_container {
@@ -122,6 +129,7 @@
 .projects_container {
   background-color: black;
   color: white;
+  padding: 0 8rem;
 }
 
 .project_card {
@@ -135,11 +143,11 @@
 }
 
 .project_grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-    gap: 25px 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  gap: 25px 10px;
 }
 
 .proj_one {
@@ -152,32 +160,95 @@
   justify-self: center;
 }
 
-
 .proj_two {
   grid-area: 2 / 3 / 3 / 5;
   justify-self: center;
 }
 
-.proj_title {
+.project {
   font-weight: 700;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
-  border-bottom: solid 2px white;
+  width: 40%;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.proj_title span {
+.project span {
   margin-left: 15px;
 }
 
 .proj_stack {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-@media (max-width: 800px) {
+.proj_title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.proj_title a {
+  margin-left: 20px;
+}
+
+.tech_grid {
+  width: 65%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px;
+  justify-content: space-evenly;
+}
+
+.serviceCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+.ssCard {
+  height: 200px;
+  width: 320px;
+  position: relative;
+}
+
+.ssCard:nth-of-type(1) {
+  bottom: 5%;
+  left: 15%;
+}
+
+.ssCard:nth-of-type(2) {
+  background-color: yellow;
+  bottom: 15%;
+  right: 35%;
+}
+
+.ssCard:nth-of-type(3) {
+  background-color: red;
+  bottom: 55%;
+  left: 35%;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 55px 0;
+}
+
+.proj_image > span {
+  box-shadow: -25px 30px 2px 0px darkgrey;
+}
+
+@media (max-width: 1150px) {
   .cta_hero {
     height: 70%;
   }
@@ -222,24 +293,39 @@
     grid-column: 2/6;
     grid-row: 1;
     justify-self: start;
-    width:100%;
+    width: 100%;
   }
 
   .proj_two {
     grid-column: 2/6;
     grid-row: 2;
     justify-self: start;
-    width:100%;
+    width: 100%;
   }
 
   .proj_three {
     grid-column: 2/6;
     grid-row: 3;
     justify-self: start;
-    width:100%;
+    width: 100%;
+  }
+
+  .listItem {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .proj_image {
+    margin: auto;
+  }
+  .proj_image > span {
+    box-shadow: none;
   }
 }
-
 
 @media (max-width: 500px) {
   .hero_desc {
@@ -252,5 +338,23 @@
 
   .contact_container {
     padding: 15px;
+  }
+
+  .serviceCards {
+    flex-flow: column nowrap;
+  }
+  .card {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .section {
+    padding: 0 20px;
+  }
+  .listItem {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+    padding: 0 5px;
   }
 }
