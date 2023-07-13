@@ -248,7 +248,7 @@
   box-shadow: -25px 30px 2px 0px darkgrey;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1150px) {
   .cta_hero {
     height: 70%;
   }
@@ -309,6 +309,22 @@
     justify-self: start;
     width: 100%;
   }
+
+  .listItem {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+    padding: 0 5px;
+  }
+
+  .proj_image {
+    margin: auto;
+  }
+  .proj_image > span {
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -340,9 +356,5 @@
   .project {
     width: 100%;
     padding: 0 5px;
-  }
-
-  .proj_image > span {
-    box-shadow: none;
   }
 }
