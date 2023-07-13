@@ -14,7 +14,6 @@ export const Projects = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        padding: "35px 0",
       }}
     >
       <div className="projects">
