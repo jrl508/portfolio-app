@@ -1,0 +1,17 @@
+.icon_container {
+  width: 80px;
+  height: 80px;
+  display: grid;
+}
+
+.icon {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .icon_container {
+    width: 60px;
+    height: 60px;
+  }
+}

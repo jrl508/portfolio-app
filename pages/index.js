@@ -25,6 +25,7 @@ import Avatar from "../public/Avatar.png";
 import { Projects } from "../components/Projects";
 import Typed from "react-typed";
 import Tooltip from "../components/Tooltip";
+import TechImage from "../components/TechImage";
 
 export default function Home() {
   const [status, setStatus] = useState("Submit");
@@ -156,82 +157,52 @@ export default function Home() {
           <h2>Techonologies Used</h2>
           <div className={styles.tech_grid}>
             <Tooltip text="Javascript">
-              <Image
-                src={javascriptlogo}
-                width={80}
-                height={80}
-                alt="Javascript Logo"
-              />
+              <TechImage src={javascriptlogo} alt="Javascript Logo" />
             </Tooltip>
             <Tooltip text={"Python"}>
-              <Image
-                src={pythonlogo}
-                width={80}
-                height={80}
-                alt="Python Logo"
-              />
+              <TechImage src={pythonlogo} alt="Python Logo" />
             </Tooltip>
             <Tooltip text={"HTML"}>
-              <Image src={htmllogo} width={80} height={80} alt="HTML Logo" />
+              <TechImage src={htmllogo} alt="HTML Logo" />
             </Tooltip>
             <Tooltip text={"CSS"}>
-              <Image src={csslogo} width={80} height={80} alt="CSS Logo" />
+              <TechImage src={csslogo} width={80} height={80} alt="CSS Logo" />
             </Tooltip>
             <Tooltip text={"ReactJS"}>
-              <Image src={reactlogo} width={80} height={80} alt="React Logo" />
+              <TechImage src={reactlogo} alt="React Logo" />
             </Tooltip>
             <Tooltip text={"NextJS"}>
-              <Image src={nextlogo} width={80} height={80} alt="Next Logo" />
+              <TechImage src={nextlogo} alt="Next Logo" />
             </Tooltip>
             <Tooltip text={"Redux"}>
-              <Image src={reduxlogo} width={80} height={80} alt="Redux Logo" />
+              <TechImage src={reduxlogo} alt="Redux Logo" />
             </Tooltip>
             <Tooltip text={"Mobx"}>
-              <Image src={mobxlogo} width={80} height={80} alt="Mobx Logo" />
+              <TechImage src={mobxlogo} alt="Mobx Logo" />
             </Tooltip>
             <Tooltip text={"Node"}>
-              <Image src={nodelogo} width={80} height={80} alt="Node Logo" />
+              <TechImage src={nodelogo} alt="Node Logo" />
             </Tooltip>
             <Tooltip text={"Material UI"}>
-              <Image
-                src={materiallogo}
-                width={80}
-                height={80}
-                alt="Material Logo"
-              />
+              <TechImage src={materiallogo} alt="Material Logo" />
             </Tooltip>
             <Tooltip text={"Postgresql"}>
-              <Image
-                src={postgresqllogo}
-                width={80}
-                height={80}
-                alt="Postgresql Logo"
-              />
+              <TechImage src={postgresqllogo} alt="Postgresql Logo" />
             </Tooltip>
             <Tooltip text={"MySQL"}>
-              <Image src={mysqllogo} width={80} height={80} alt="MySQL Logo" />
+              <TechImage src={mysqllogo} alt="MySQL Logo" />
             </Tooltip>
             <Tooltip text={"MongoDB"}>
-              <Image
-                src={mongologo}
-                width={80}
-                height={80}
-                alt="MongoDB Logo"
-              />
+              <TechImage src={mongologo} alt="MongoDB Logo" />
             </Tooltip>
             <Tooltip text={"Auth0"}>
-              <Image src={auth0logo} width={80} height={80} alt="Auth0 Logo" />
+              <TechImage src={auth0logo} alt="Auth0 Logo" />
             </Tooltip>
             <Tooltip text={"Google Analytics"}>
-              <Image
-                src={googlAnalytics}
-                width={80}
-                height={80}
-                alt="Google Analytics Logo"
-              />
+              <TechImage src={googlAnalytics} alt="Google Analytics Logo" />
             </Tooltip>
             <Tooltip text={"Amazon Web Services"}>
-              <Image src={awslogo} width={80} height={80} alt="AWS Logo" />
+              <TechImage src={awslogo} width={80} height={80} alt="AWS Logo" />
             </Tooltip>
           </div>
         </div>
