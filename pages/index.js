@@ -69,7 +69,7 @@ export default function Home() {
           <div className={styles.hero_name}>
             <Typed
               strings={[
-                "Hello I'm Ricardo Lafontant",
+                "Hello I'm Jean Lafontant",
                 "Full Stack Developer",
                 "Tech Consultant",
                 "Let's get started",
